@@ -1,0 +1,37 @@
+[application]
+enable-perf-measurement=1
+perf-measurement-interval-sec=2
+
+[tiled-display]
+enable=0
+
+[source0]
+enable=1
+gpu-id=0
+#Type - 1=CameraV4L2 2=URI 3=MultiURI
+type=2
+uri=file:///opt/nvidia/deepstream/deepstream-6.0/samples/streams/sample_qHD.mp4
+
+
+
+[streammux]
+gpu-id=0
+live-source=0
+batch-size=1
+batched-push-timeout=40000
+## Set muxer output width and height
+width=1920
+height=1080
+
+[osd]
+enable=0
+
+[primary-gie]
+enable=1
+gpu-id=0
+batch-size=1
+gie-unique-id=1
+config-file=./yolo-seg.txt
+
+[tests]
+file-loop=1
