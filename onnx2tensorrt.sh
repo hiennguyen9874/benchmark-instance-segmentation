@@ -14,3 +14,4 @@
 /usr/src/tensorrt/bin/trtexec --onnx=./yolov8n-seg.onnx --batch=1 --saveEngine=./yolov8n-seg.trt --workspace=8192 --fp16 >> ./yolov8n-seg.log
 /usr/src/tensorrt/bin/trtexec --onnx=./yolov8l-seg.onnx --batch=1 --saveEngine=./yolov8l-seg.trt --workspace=8192 --fp16 >> ./yolov8l-seg.log
 /usr/src/tensorrt/bin/trtexec --onnx=./yolov8s-seg.onnx --batch=1 --saveEngine=./yolov8s-seg.trt --workspace=8192 --fp16 >> ./yolov8s-seg.log
+/usr/src/tensorrt/bin/trtexec --onnx=./yolov9-c-seg-converted.onnx --saveEngine=./yolov9-c-seg-converted.trt --workspace=12288 --fp16 >> yolov9-c-seg-converted.log

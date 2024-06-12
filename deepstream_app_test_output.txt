@@ -10,7 +10,8 @@ enable=1
 gpu-id=0
 #Type - 1=CameraV4L2 2=URI 3=MultiURI
 type=2
-uri=file:///opt/nvidia/deepstream/deepstream-6.0/samples/streams/sample_qHD.mp4
+#uri=file:///opt/nvidia/deepstream/deepstream-6.0/samples/streams/sample_qHD.mp4
+uri=file://./V1.mp4
 
 [sink0]
 enable=1
